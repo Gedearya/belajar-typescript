@@ -52,3 +52,22 @@ const userData: User = {
 };
 
 console.log("User Data:", userData);
+
+// =============================
+//  4. CLASS OOP SEDERHANA
+// =============================
+
+class Animal {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  speak(): void {
+    console.log(`${this.name} makes a sound!`);
+  }
+}
+
+const cat = new Animal("Mochi");
+cat.speak();
