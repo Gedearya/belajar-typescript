@@ -32,3 +32,23 @@ function sum(a: number, b: number, c?: number): number {
 }
 
 console.log("Sum:", sum(3, 4)); // c tidak diisi → default 0
+
+// =============================
+//  3. INTERFACE
+// =============================
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  isActive: boolean;
+}
+
+const userData: User = {
+  id: 1,
+  name: "Gedearya",
+  email: "gede@example.com",
+  isActive: true,
+};
+
+console.log("User Data:", userData);
