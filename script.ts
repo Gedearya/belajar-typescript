@@ -71,3 +71,23 @@ class Animal {
 
 const cat = new Animal("Mochi");
 cat.speak();
+
+// =============================
+//  5. GENERIC (untuk pemula)
+// =============================
+
+function wrap<T>(value: T): T[] {
+  return [value];
+}
+
+console.log(wrap<number>(123));
+console.log(wrap<string>("Hello TypeScript"));
+
+// =============================
+//  6. TYPE ALIAS
+// =============================
+
+type Status = "success" | "error" | "loading";
+
+let currentStatus: Status = "loading";
+console.log("Status:", currentStatus);
